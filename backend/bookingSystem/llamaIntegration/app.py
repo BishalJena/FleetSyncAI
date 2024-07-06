@@ -4,10 +4,6 @@ from llama_agent import optimize_route
 app = Flask(__name__)
 
 
-truck_data = [...]  # Populate with truck information
-hub_data = [...]    # Populate with hub information
-driver_data = [...] # Populate with driver information
-
 @app.route('/api/book', methods=['POST'])
 def book_truck():
     data = request.json
