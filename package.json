@@ -1,0 +1,25 @@
+{
+  "name": "vahaan-sanchalan-ai-agents-hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddham-jain/vahaan-sanchalan-AI-agents-hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddham-jain/vahaan-sanchalan-AI-agents-hackathon/issues"
+  },
+  "homepage": "https://github.com/siddham-jain/vahaan-sanchalan-AI-agents-hackathon#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.5",
+    "nodemon": "^3.1.4"
+  }
+}
