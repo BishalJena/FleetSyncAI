@@ -1,0 +1,35 @@
+{
+    "cities": [
+      {
+        "city_id": 1,
+        "city_name": "Mumbai",
+        "warehouses": [
+          {
+            "warehouse_id": 101,
+            "user_id": 201,
+            "capacity": 5000,
+            "availability": {
+              "2024-07-01": 3000,
+              "2024-07-02": 3500
+            }
+          }
+        ]
+      },
+      {
+        "city_id": 2,
+        "city_name": "Delhi",
+        "warehouses": [
+          {
+            "warehouse_id": 102,
+            "user_id": 202,
+            "capacity": 6000,
+            "availability": {
+              "2024-07-01": 4000,
+              "2024-07-02": 4500
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
