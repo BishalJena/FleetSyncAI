@@ -1,0 +1,104 @@
+body {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-container {
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .login-container h1 {
+    margin-bottom: 10px;
+    font-size: 28px; /* Made the font a little bigger */
+  }
+  
+  .login-container p {
+    margin-bottom: 20px;
+    color: #b3b3b3;
+    font-size: 18px; /* Made the font a little bigger */
+  }
+  
+  .form-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    margin: 0 5px;
+    font-size: 16px; /* Made the font a little bigger */
+  }
+  
+  .tab.active {
+    background-color: #444;
+  }
+  
+  .form-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b3b3b3;
+    font-size: 16px; /* Made the font a little bigger */
+  }
+  
+  .form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    font-size: 16px; /* Made the font a little bigger */
+  }
+  
+  .forgot-password {
+    float: right;
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px; /* Made the font a little bigger */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sign-in-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: #0d0d0d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px; /* Made the font a little bigger */
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #ddd;
+  }
+  
