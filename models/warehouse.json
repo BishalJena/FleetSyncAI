@@ -1,0 +1,37 @@
+[
+  {
+    "warehouse_id": 1,
+    "user_id": 3,
+    "city_id": 1,
+    "capacity": 1000,
+    "availability": true
+  },
+  {
+    "warehouse_id": 2,
+    "user_id": 3,
+    "city_id": 2,
+    "capacity": 800,
+    "availability": false
+  },
+  {
+    "warehouse_id": 3,
+    "user_id": 3,
+    "city_id": 3,
+    "capacity": 1200,
+    "availability": true
+  },
+  {
+    "warehouse_id": 4,
+    "user_id": 3,
+    "city_id": 4,
+    "capacity": 900,
+    "availability": false
+  },
+  {
+    "warehouse_id": 5,
+    "user_id": 3,
+    "city_id": 5,
+    "capacity": 1100,
+    "availability": true
+  }
+]

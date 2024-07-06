@@ -1,134 +1,22 @@
 [
   {
-    "user_id": 3,
-    "truck_owner_id": 3
+    "truck_owner_id": 1,
+    "user_id": 2
   },
   {
-    "user_id": 33,
-    "truck_owner_id": 33
+    "truck_owner_id": 2,
+    "user_id": 5
   },
   {
-    "user_id": 41,
-    "truck_owner_id": 41
+    "truck_owner_id": 3,
+    "user_id": 6
   },
   {
-    "user_id": 38,
-    "truck_owner_id": 38
+    "truck_owner_id": 4,
+    "user_id": 7
   },
   {
-    "user_id": 55,
-    "truck_owner_id": 55
-  },
-  {
-    "user_id": 17,
-    "truck_owner_id": 17
-  },
-  {
-    "user_id": 84,
-    "truck_owner_id": 84
-  },
-  {
-    "user_id": 67,
-    "truck_owner_id": 67
-  },
-  {
-    "user_id": 100,
-    "truck_owner_id": 100
-  },
-  {
-    "user_id": 22,
-    "truck_owner_id": 22
-  },
-  {
-    "user_id": 2,
-    "truck_owner_id": 2
-  },
-  {
-    "user_id": 27,
-    "truck_owner_id": 27
-  },
-  {
-    "user_id": 25,
-    "truck_owner_id": 25
-  },
-  {
-    "user_id": 13,
-    "truck_owner_id": 13
-  },
-  {
-    "user_id": 6,
-    "truck_owner_id": 6
-  },
-  {
-    "user_id": 45,
-    "truck_owner_id": 45
-  },
-  {
-    "user_id": 10,
-    "truck_owner_id": 10
-  },
-  {
-    "user_id": 9,
-    "truck_owner_id": 9
-  },
-  {
-    "user_id": 23,
-    "truck_owner_id": 23
-  },
-  {
-    "user_id": 72,
-    "truck_owner_id": 72
-  },
-  {
-    "user_id": 32,
-    "truck_owner_id": 32
-  },
-  {
-    "user_id": 94,
-    "truck_owner_id": 94
-  },
-  {
-    "user_id": 60,
-    "truck_owner_id": 60
-  },
-  {
-    "user_id": 61,
-    "truck_owner_id": 61
-  },
-  {
-    "user_id": 78,
-    "truck_owner_id": 78
-  },
-  {
-    "user_id": 48,
-    "truck_owner_id": 48
-  },
-  {
-    "user_id": 62,
-    "truck_owner_id": 62
-  },
-  {
-    "user_id": 37,
-    "truck_owner_id": 37
-  },
-  {
-    "user_id": 76,
-    "truck_owner_id": 76
-  },
-  {
-    "user_id": 64,
-    "truck_owner_id": 64
-  },
-  {
-    "user_id": 99,
-    "truck_owner_id": 99
-  },
-  {
-    "user_id": 8,
-    "truck_owner_id": 8
-  },
-  {
-    "user_id": 24,
-    "truck_owner_id": 24
+    "truck_owner_id": 5,
+    "user_id": 8
   }
 ]

@@ -1,0 +1,37 @@
+[
+  {
+    "booking_id": 1,
+    "transporter_id": 1,
+    "truck_id": 1,
+    "path_id": 1,
+    "payload": "Electronics"
+  },
+  {
+    "booking_id": 2,
+    "transporter_id": 2,
+    "truck_id": 2,
+    "path_id": 2,
+    "payload": "Furniture"
+  },
+  {
+    "booking_id": 3,
+    "transporter_id": 3,
+    "truck_id": 3,
+    "path_id": 3,
+    "payload": "Clothing"
+  },
+  {
+    "booking_id": 4,
+    "transporter_id": 4,
+    "truck_id": 4,
+    "path_id": 4,
+    "payload": "Books"
+  },
+  {
+    "booking_id": 5,
+    "transporter_id": 5,
+    "truck_id": 5,
+    "path_id": 5,
+    "payload": "Food items"
+  }
+]
