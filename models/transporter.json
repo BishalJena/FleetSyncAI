@@ -1,5 +1,134 @@
-{
-  "user_id" : "1",
-  "email" : "johndoe@email.com",
-  "password" : "dummy"
-}
+[
+  {
+    "user_id": 47,
+    "transporter_id": 47
+  },
+  {
+    "user_id": 42,
+    "transporter_id": 42
+  },
+  {
+    "user_id": 29,
+    "transporter_id": 29
+  },
+  {
+    "user_id": 66,
+    "transporter_id": 66
+  },
+  {
+    "user_id": 51,
+    "transporter_id": 51
+  },
+  {
+    "user_id": 44,
+    "transporter_id": 44
+  },
+  {
+    "user_id": 40,
+    "transporter_id": 40
+  },
+  {
+    "user_id": 26,
+    "transporter_id": 26
+  },
+  {
+    "user_id": 20,
+    "transporter_id": 20
+  },
+  {
+    "user_id": 88,
+    "transporter_id": 88
+  },
+  {
+    "user_id": 68,
+    "transporter_id": 68
+  },
+  {
+    "user_id": 97,
+    "transporter_id": 97
+  },
+  {
+    "user_id": 98,
+    "transporter_id": 98
+  },
+  {
+    "user_id": 12,
+    "transporter_id": 12
+  },
+  {
+    "user_id": 36,
+    "transporter_id": 36
+  },
+  {
+    "user_id": 70,
+    "transporter_id": 70
+  },
+  {
+    "user_id": 91,
+    "transporter_id": 91
+  },
+  {
+    "user_id": 81,
+    "transporter_id": 81
+  },
+  {
+    "user_id": 50,
+    "transporter_id": 50
+  },
+  {
+    "user_id": 96,
+    "transporter_id": 96
+  },
+  {
+    "user_id": 5,
+    "transporter_id": 5
+  },
+  {
+    "user_id": 1,
+    "transporter_id": 1
+  },
+  {
+    "user_id": 46,
+    "transporter_id": 46
+  },
+  {
+    "user_id": 95,
+    "transporter_id": 95
+  },
+  {
+    "user_id": 73,
+    "transporter_id": 73
+  },
+  {
+    "user_id": 69,
+    "transporter_id": 69
+  },
+  {
+    "user_id": 54,
+    "transporter_id": 54
+  },
+  {
+    "user_id": 31,
+    "transporter_id": 31
+  },
+  {
+    "user_id": 87,
+    "transporter_id": 87
+  },
+  {
+    "user_id": 63,
+    "transporter_id": 63
+  },
+  {
+    "user_id": 21,
+    "transporter_id": 21
+  },
+  {
+    "user_id": 49,
+    "transporter_id": 49
+  },
+  {
+    "user_id": 34,
+    "transporter_id": 34
+  }
+]
