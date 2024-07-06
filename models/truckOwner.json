@@ -130,5 +130,11 @@
   {
     "user_id": 24,
     "truck_owner_id": 24
+  },
+  {
+    "truck_id": "TRUCK123",
+    "driver_id": "DRIVER456",
+    "city_id": "CITY789",
+    "status": true
   }
 ]
