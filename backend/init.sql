@@ -1,13 +1,13 @@
 -- Drop Tables If They Exist (optional, only if you want to drop existing tables)
-DROP TABLE IF EXISTS booking;
-DROP TABLE IF EXISTS warehouse;
-DROP TABLE IF EXISTS transporter;
-DROP TABLE IF EXISTS path;
-DROP TABLE IF EXISTS truck;
-DROP TABLE IF EXISTS driver;
-DROP TABLE IF EXISTS truck_owner;
-DROP TABLE IF EXISTS city;
-DROP TABLE IF EXISTS users;
+# DROP TABLE IF EXISTS booking;
+# DROP TABLE IF EXISTS warehouse;
+# DROP TABLE IF EXISTS transporter;
+# DROP TABLE IF EXISTS path;
+# DROP TABLE IF EXISTS truck;
+# DROP TABLE IF EXISTS driver;
+# DROP TABLE IF EXISTS truck_owner;
+# DROP TABLE IF EXISTS city;
+# DROP TABLE IF EXISTS users;
 
 -- Create Users Table
 CREATE TABLE IF NOT EXISTS users (
@@ -125,7 +125,9 @@ ADD CONSTRAINT fk_booking_path
 FOREIGN KEY (path_id) REFERENCES path(path_id);
 
 -- Populate city table
-I-- Users Table (50 rows)
+-- Users Table (50 rows)
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'rootpassword' WITH GRANT OPTION;
+
 INSERT INTO users (email, password, type) VALUES 
 ('rajesh.kumar@gmail.com', 'hashed_password_1', 'driver'),
 ('priya.sharma@yahoo.com', 'hashed_password_2', 'driver'),
