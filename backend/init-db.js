@@ -3,6 +3,11 @@ const path = require('path');
 const mysql = require('mysql');
 const util = require('util');
 
+console.log('DB_HOST:', process.env.DB_HOST);
+console.log('DB_USER:', process.env.DB_USER);
+console.log('DB_PASSWORD:', process.env.DB_PASSWORD);
+console.log('DB_NAME:', process.env.DB_NAME);
+
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
@@ -10,6 +15,8 @@ const connection = mysql.createConnection({
     database: process.env.DB_NAME,
     multipleStatements: true
 });
+
+
 
 const query = util.promisify(connection.query).bind(connection);
 

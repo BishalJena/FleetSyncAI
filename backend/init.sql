@@ -126,6 +126,8 @@ FOREIGN KEY (path_id) REFERENCES path(path_id);
 
 -- Populate city table
 -- Users Table (50 rows)
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'rootpassword' WITH GRANT OPTION;
+
 INSERT INTO users (email, password, type) VALUES 
 ('rajesh.kumar@gmail.com', 'hashed_password_1', 'driver'),
 ('priya.sharma@yahoo.com', 'hashed_password_2', 'driver'),

@@ -3,3 +3,4 @@ llama-index-agent-openai
 flask 
 llama-cpp-python 
 pandas
+mysql-connector-python
