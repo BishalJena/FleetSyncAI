@@ -1,63 +1,34 @@
 from flask import Flask, jsonify, request
-import mysql.connector
-from db_utils import query_database, update_database
-from llama_utils import LlamaAgent
+from warehouseAgent import WarehouseAIAgent
+from bookingAgent import BookingAIAgent
+from fleetAgent import FleetAIAgent
+from db_utils import initialize_db
 
 app = Flask(__name__)
 
-# Database configuration
-db_config = {
-    'host': 'localhost',  # Use 'db' as per docker-compose networking
-    'user': 'root',
-    'password': 'rootpassword',
-    'database': 'mydatabase',
-}
+initialize_db()
 
-# Initialize Llama agent
-llama_agent = LlamaAgent()
+groq_api_key = "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"
 
-@app.route('/optimize_routes', methods=['POST'])
-def optimize_routes():
-    try:
-        # Query warehouses from database
-        warehouses = query_database("SELECT * FROM warehouse")
-        
-        # Optimize routes using Llama
-        optimized_routes = llama_agent.optimize_routes(warehouses)
+warehouse_agent = WarehouseAIAgent()
+booking_agent = BookingAIAgent(groq_api_key)
+fleet_agent = FleetAIAgent()
 
-        # Update database with optimized routes (example)
-        update_database("UPDATE warehouse SET optimized_route = %s WHERE warehouse_id = %s", optimized_routes)
+@app.route('/api/warehouse', methods=['GET'])
+def optimize_warehouse():
+    optimized_routes = warehouse_agent.optimize_warehouse()
+    return jsonify({"message": "Warehouse data fetched", "warehouse_data": optimized_routes})
 
-        return jsonify({'message': 'Routes optimized successfully', 'optimized_routes': optimized_routes}), 200
-    
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-    
+@app.route('/api/booking', methods=['POST'])
+def book_item():
+    data = request.json
+    response = booking_agent.book_item(data)
+    return jsonify(response)
 
-def get_db_connection():
-    return mysql.connector.connect(**db_config)
-
-@app.route('/bookings', methods=['GET'])
-def get_bookings():
-    try:
-        # Connect to the database
-        conn = get_db_connection()
-        cursor = conn.cursor(dictionary=True)
-
-        # Execute a query to fetch all bookings
-        cursor.execute("SELECT * FROM booking")
-        bookings = cursor.fetchall()
-
-        # Close cursor and connection
-        cursor.close()
-        conn.close()
-
-        # Return JSON response
-        return jsonify(bookings)
-
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
+@app.route('/api/fleet', methods=['GET'])
+def optimize_fleet():
+    optimized_routes = fleet_agent.optimize_fleet()
+    return jsonify({"message": "Fleet data fetched", "fleet_data": optimized_routes})
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
-
+    app.run(debug=True)

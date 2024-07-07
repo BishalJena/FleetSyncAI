@@ -1,13 +1,27 @@
+import requests
+
 class LlamaAgent:
-    def __init__(self):
-        # Initialize any required configurations for Llama
-        pass
+    def __init__(self, api_key):
+        self.api_key = api_key
 
-    def optimize_routes(self, warehouses):
-        # Placeholder method to simulate route optimization using Llama
-        # Replace with actual implementation using Llama's optimization algorithms
-        optimized_routes = {}
-        for warehouse in warehouses:
-            optimized_routes[warehouse['warehouse_id']] = f"Optimized route for {warehouse['city_id']}"
+    def generate_response(self, messages, model_name):
+        url = "https://api.groq.com/openai/v1/chat/completions"
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
+        data = {
+            "messages": messages,
+            "model": model_name
+        }
+        response = requests.post(url, json=data, headers=headers)
+        return response.json()
 
-        return optimized_routes
+    for item in data:
+    # Check if 'name' exists in item before accessing
+        if 'name' in item:
+            optimized_routes[item['id']] = f"Optimized route for {item['name']}"
+        else:
+            # Handle case where 'name' key is missing
+            optimized_routes[item['id']] = "Optimized route"
+
