@@ -1,4 +1,5 @@
 # Use an official Node.js runtime as a parent image
+# Use Node.js 14 as the base image
 FROM node:14
 
 # Set the working directory
@@ -16,8 +17,17 @@ COPY . .
 # Copy the SQL script
 COPY init.sql .
 
+# Copy the docker-entrypoint.sh script
+#COPY docker-entrypoint.sh usr/src/app
+
+# Make the entrypoint script executable
+RUN chmod +x ./docker-entrypoint.sh
+
 # Expose the port your app runs on
 EXPOSE 3000
 
-# Command to initialize the database and start the application
-CMD ["sh", "-c", "node init-db.js && npm start"]
+# Set the entrypoint
+ENTRYPOINT ["docker-entrypoint.sh"]
+
+# Set the default command
+CMD ["node", "init-db.js"]
